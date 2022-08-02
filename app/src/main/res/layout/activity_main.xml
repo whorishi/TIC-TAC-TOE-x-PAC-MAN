@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/packmanbg"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="337dp"
+        android:layout_height="338dp"
+        android:background="@drawable/ticactoeboxwhite"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:contentDescription="@string/image_des"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="11dp"
+            android:onClick="load"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/image_des"
+            android:onClick="load"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:onClick="load"
+            android:tag="7"
+            app:layout_column="1"
+            android:contentDescription="@string/image_des"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="18dp"
+            android:onClick="load"
+            android:contentDescription="@string/image_des"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="19dp"
+            android:contentDescription="@string/image_des"
+            android:onClick="load"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="94dp"
+            android:contentDescription="@string/image_des"
+            android:layout_height="91dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="19dp"
+            android:onClick="load"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:contentDescription="@string/image_des"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:onClick="load"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:contentDescription="@string/image_des"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:onClick="load"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:contentDescription="@string/image_des"
+            android:id="@+id/imageView4"
+            android:layout_width="94dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="11dp"
+            android:onClick="load"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="restart"
+        android:text="RESTART"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:background="#FFD600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <ImageView
+        android:id="@+id/pacman_text"
+        android:layout_width="375dp"
+        android:layout_height="230dp"
+        android:background="@drawable/pacmantext1"
+        android:contentDescription="@string/image_des"
+
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
