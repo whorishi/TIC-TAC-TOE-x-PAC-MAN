@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
     int player = 1;  //player one is RED Angry Bird
     int[][] winningStates = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
     int[] gameState = {-1, -1, -1, -1, -1, -1, -1, -1, -1};
-
+//just
+//for
+//checking
+//lokok
     public void load(View view) {
         ImageView v = (ImageView) view;
         int tag = Integer.parseInt(v.getTag().toString());
